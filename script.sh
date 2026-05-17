@@ -7,6 +7,8 @@ set -e
 echo "=> Installing needed packages"
 sudo pacman -Syu --needed --noconfirm hyprland kitty wofi nano xdg-user-dirs base-devel
 
+mkdir -p $HOME/.config/hypr
+
 # Directories managment
 xdg-user-dirs-update
 
@@ -19,7 +21,7 @@ cd ..
 rm -rf yay
 
 # Visual Studio Code
-yay -Syu visual-studio-code-bin --noconfirm --needed
+yay -S --noconfirm --needed visual-studio-code-bin
 
 # Copying config files
-cp -f Configs/hyprland.conf $HOME/.config/hypr/hyperland.conf
+cp -f Configs/hyprland.conf $HOME/.config/hypr/hyprland.conf
