@@ -31,8 +31,7 @@ yay -S --noconfirm --needed visual-studio-code-bin google-chrome swww
 cp -f Configs/hyprland.conf $HOME/.config/hypr/hyprland.conf
 cp -f Configs/kitty.conf $HOME/.config/kitty/
 
-mkdir -p $HOME/Pictures/Wallpapers
-cp Wallpapers/totoro-wallpaper.jpg $HOME/Pictures/Wallpapers/
+cp -f Wallpapers/ $HOME/Pictures/
 
-cp Scripts/* $HOME/.config/hypr/
-chmod +x Scripts/*
+cp -r scripts/ $HOME/.config/hypr/
+chmod +x $HOME/.config/hypr/scripts/*
