@@ -32,6 +32,7 @@ cp -f Configs/hyprland.conf $HOME/.config/hypr/hyprland.conf
 cp -f Configs/kitty.conf $HOME/.config/kitty/
 
 mkdir -p $HOME/Pictures/Wallpapers
-cp Wallpapers/totoro-wallpaper.jpg $HOME/Pictures/Wallpapers
+cp Wallpapers/totoro-wallpaper.jpg $HOME/Pictures/Wallpapers/
 
-awww img $HOME/Pictures/Wallpapers
+cp Scripts/* $HOME/.config/hypr/
+chmod +x Scripts/*
